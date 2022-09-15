@@ -1,8 +1,8 @@
 class Solution {
-    private:
- void   solve(vector<int>& nums, vector<vector<int>> &ans,int index){
-        if(index>=nums.size()){
-        ans.push_back(nums);
+    public:
+ void  solve(vector<int>& nums, vector<vector<int>> &ans,int index){
+        if(index==nums.size()){
+            ans.push_back(nums);
             // return;
         }
         
@@ -13,7 +13,6 @@ class Solution {
             swap(nums[index],nums[i]);
         }
     }
-public:
     vector<vector<int>> permute(vector<int>& nums) {
         vector<vector<int>> ans;
         int index=0;
