@@ -1,9 +1,9 @@
 class Solution {
     private:
  void   solve(vector<int>& nums, vector<vector<int>> &ans,int index){
-        if(index==nums.size()){
+        if(index>=nums.size()){
         ans.push_back(nums);
-            return;
+            // return;
         }
         
         for(int i=index;i<nums.size();i++){
